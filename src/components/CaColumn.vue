@@ -1,6 +1,6 @@
 <template>
   <div class="ca-column">
-    <p>{{day}}</p>
+    <p class="ca-column-title">{{day}}</p>
     <slot />
   </div>
 </template>
@@ -16,9 +16,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-p {
-  display: block;
-  width: 100px;
-  margin: 10px;
+.ca-column {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ca-column-title {
+  box-sizing: border-box;
+  height: 50px;
+  flex: 1;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
 }
 </style>

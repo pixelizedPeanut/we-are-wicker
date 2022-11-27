@@ -1,5 +1,5 @@
 <template>
-  <div class="ci-tile">
+  <div class="ca-tile">
     <ul>
       <li>{{ ca }}</li>
       <li>Reward: {{ reward }}</li>
@@ -33,10 +33,9 @@ li {
   display: block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+.ci-tile {
+  box-sizing: border-box;
+  flex: 3;
+  overflow-y: scroll;
 }
-/* .ci-tile {
-  float: left;
-} */
 </style>
